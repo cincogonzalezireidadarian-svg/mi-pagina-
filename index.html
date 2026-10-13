@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>practica</title>
+	<style>
+		* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f7fc;
+    color: #263449;
+}
+
+header {
+    background: #2864e8;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: #2864e8;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+}
+
+header button {
+    background: white;
+    color: #2864e8;
+}
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+main {
+    flex: 3;
+    min-width: 0;
+}
+
+section {
+    background: white;
+   border: 2px dashed #8C4966;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+section h3 {
+    margin-top: 0;
+}
+
+aside {
+    flex: 1;
+    background: #dce8fb;
+    padding: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+}
+
+figure {
+    display: inline-block;
+    margin: 5px;
+}
+
+figure img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+}
+
+form {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 10px;
+    max-width: 450px;
+}
+
+input, select {
+    width: 100%;
+    padding: 6px;
+}
+
+form button {
+    grid-column: 1 / -1;
+    justify-self: start;
+}
+
+footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 700px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+	</style>
+</head>
+<body>
+<h1>MI PAGINA WEB</h1>
+<p><b>parrafo en negrita</b>, <i>cursiva </i> <mark>y resaltado. citas destacada esterna</mark></p>
+<form>
+Nombre:
+<input type="texto" name="Nombre"><br>
+
+<h1>listas</h1>
+
+<ul>
+<li> HTML</li> <li>CSS </li> <li>JavaScript</li> 
+</lu>
+<br>
+<ol>
+<li>Crear</li>Escribir<li>Publicar</li> 
+</ol>
+<p>lista de definiciones:termino y descrpcion</p>
+<br>
+
+<h1>Tabla</h1>
+<table border="2" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Tecnologia</th>
+            <th>Funciones</th>
+        
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Estructura</td> 
+            
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Diseño</td>
+            
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Interactividad</td>
+            
+        </tr>
+    </table>
+<br>
+
+<h1>FORMULARIO</h1>
+Nombre:
+<input type="texto" name="Nombre">
+
+Correo
+<input type="texto" name="Correo">
+
+Pais ()
+<select id="Pais" required>
+	<option value="MEXICO">MEXICO</option>
+	<option value="EEUU">EEUU</option>
+	<option value="BRASIL">BRAZIL</option>
+</select>
+<button type="submit">Enviar</button>
+</form>
+</body>
+</html>
